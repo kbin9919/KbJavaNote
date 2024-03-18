@@ -3,15 +3,12 @@ package myPrg.stage0;
 public class solution1 {
 
 	public int solution(int n) {
-	    int x = 1;
-	    while(true){
-	       if(n%x==1){
-	          break;
-	       }
-	        x++;
-	    }
-	    int answer = x;
-	    return answer;
+		int answer = 0;
+		for (int i = 1; i <= n; i++) {
+			if (n % i == 0) {
+				answer += i;
+			}
+		}
+		return answer;
 	}
-
 }
