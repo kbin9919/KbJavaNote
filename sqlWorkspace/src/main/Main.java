@@ -1,17 +1,21 @@
 package main;
 
+import java.sql.SQLException;
+
 import member.MemberController;
+import member.MemberInfo;
 import phone.PhoneInfo;
 import sellPhone.SellPhone;
 import util.Util;
 
 
 public class Main {
-	public void menu() {
+	public void menu() throws SQLException {
 		boolean run = true;
 		MemberController mc = new MemberController();
 		SellPhone sp = new SellPhone();
 		PhoneInfo pi = new PhoneInfo();
+		MemberInfo mi = new MemberInfo();
 		while(run) {
 			System.out.println("1. 로그인");
 			System.out.println("2. 중고폰 판매");
@@ -30,7 +34,7 @@ public class Main {
 					e.printStackTrace();
 				} break;
 			case "2" : sp.sellPhone(); break;
-			case "3" : break;
+			case "3" : mi.memberInfo(); break;
 			case "4" : pi.phoneInfo(); break;
 			case "0" : System.out.println("*사용 종료"); run = false; break;
 			default : System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
@@ -38,7 +42,7 @@ public class Main {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		Main main = new Main();
 		main.menu();
 		
