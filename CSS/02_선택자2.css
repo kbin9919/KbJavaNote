@@ -1,0 +1,45 @@
+h1{
+  background-color: red;
+}
+
+input[name = "userPwd"]{
+  background-color: red;
+}
+#userPwdLable{
+  color: red;
+}
+
+#test01{
+  border: 5px solid black;
+}
+
+#test01 > h4{
+  color: blue;
+}
+#test01 li{
+  color: blue;
+}
+
+#target ~ div{
+  color: blue;
+}
+
+#active-test:active{
+  background-color: blue;
+}
+#hover-test:hover{
+  background-color: blue;
+}
+
+input[type = "checkbox"]:checked {
+  width: 100px;
+  height: 100px;
+}
+
+#abc:focus{
+  background-color: aqua;
+}
+
+input[type="button"]:disabled{
+  background-color: violet;
+}
