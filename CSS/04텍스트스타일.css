@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* p {
+    font-family: 'Black Han Sans', sans-serif;
+} */
+
+h1 {
+    font-family: "궁서체";
+}
+
+span {
+    font-size: 3em;
+    font-size: 300%;
+    font-size: small;
+}
+
+span {
+    font-weight: 900;
+}
+
+
+#shadow-test {
+    text-shadow: 0px 0px 4px #ccc,
+        0px -5px 4px #ff3,
+        2px -10px 6px #fd3,
+        -2px -15px 11px #f80,
+        2px -19px 18px #f20;
+}
+
+ul {
+    list-style-type: none;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-image: url(../resources/img/1.png);
+}
+
+#fontV{
+    font-variant: small-caps;
+}
+
+#fontS{
+    font-style: italic;
+}
+
+#color{
+    color: blue;
+}
+
+#textT{
+    text-transform: uppercase;
+}   
+
+#listS{
+    list-style-image: url('../resources/image/1.png');
+}
+
+#letterS{
+    letter-spacing: 10px;
+}
+#wordS{
+    word-spacing: 15px;
+}
+
+#textA{
+    text-align: center;
+}
+
+#textI{
+    text-indent: 20px;
+}
+
+#lineH{
+    line-height: 10;
+}
+
+div {
+    width: 200px; /* 텍스트가 표시될 영역의 너비를 지정합니다. */
+    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않고 한 줄로 표시되도록 설정합니다. */
+    overflow: hidden; /* 텍스트가 영역을 벗어날 경우 숨김 처리합니다. */
+    text-overflow: ellipsis; /* 텍스트가 영역을 벗어날 경우 생략 부호를 표시합니다. */
+}
