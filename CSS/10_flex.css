@@ -1,0 +1,40 @@
+#div00 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: space-between;
+  flex-direction: column;
+}
+
+#div00>div {
+  width: 30%;
+  height: 30%;
+  background-color: gray;
+  border: 3px solid rgb(42, 134, 199);
+  box-sizing: border-box;
+}
+
+#outer {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#outer > #target {
+  width: 50%;
+  height: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

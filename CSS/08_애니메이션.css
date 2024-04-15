@@ -1,0 +1,126 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+#target{
+   
+  transition-property: all;;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  /* transition-timing-function: cubic-bezier(); */
+  transition-timing-function: cubic-bezier(.22,.77,.46,-0.89);
+  /* 
+   animation-name: hello;
+   animation-duration: 3s;
+   animation-delay: 0.5s;
+   transition-timing-function: linear;
+   /* animation-iteration-count: infinite; */
+   animation-direction: reverse;
+   animation-fill-mode: forwards;
+   animation-play-state: running;
+}
+
+#target:hover{
+  animation-play-state: paused;
+}
+
+@keyframes hello{
+    0%{
+      background-color: red;
+      width: 300px;
+      height: 300px;
+    }
+    50%{
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+    }
+    100%{
+      background-color: green;
+      width: 200px;
+      height: 200px;
+    }
+}
+
+#t{
+  animation-name: abc;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#t:active{
+  animation-play-state: paused;
+}
+
+
+@keyframes abc{
+  0%{
+
+  }
+  100%{
+    transform: rotateZ(720deg);
+  }
+}
+
+.btn-jelly:hover{
+  background-color: violet;
+  border-radius: 10px;
+  border-width: 0px;
+
+  animation-name: jelly;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jelly{
+  0%{
+    background-color: violet;
+    transform: scale(0.8, 1.2);
+  }
+  50%{
+    background-color: rgb(139, 76, 139);
+    transform: scale(1.2, 0.9);
+  }
+  100%{
+    background-color: rgb(215, 9, 215);
+    transform: scale(0.5, 1.3);
+  }
+}
+
+#back-v:hover{
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+
+#card{
+  width: 80px;
+  height: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin: 50px;
+  position: relative;
+}
+
+#card > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#card:hover > div{
+  transform: rotateX(180deg);
+}
+
+#front{
+  background-color: red;
+  backface-visibility: hidden;
+}
+#back{
+  background-color: blue;
+  /* transform: rotateX(180deg);
+  backface-visibility: hidden ; */
+  z-index: -1;
+}
