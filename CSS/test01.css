@@ -1,0 +1,119 @@
+/* 기본  CSS 리셋*/
+body, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#main{
+  width: 30vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 3fr 4fr 1fr 2fr 4fr;
+  grid-template-columns: 1fr;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo > img{
+  margin-top: 10px;
+}
+
+#login{
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+#login > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#div-id, #div-pwd{
+  border: 1px solid lightgray;
+  width: 80%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login input {
+  border: 0px;
+  width: 80%;
+  height: 60%;
+}
+
+#div-id{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 0px;
+}
+
+#div-pwd{
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#login input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+
+#login-btn-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-btn-wrap > button{
+  width: 90%;
+  height: 80%;
+  color: white;
+  background-color: aqua;
+  font-weight: 900;
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 8px;
+}
+
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu > span{
+  font-size: 0.7em;
+  color: rgb(69, 59, 59);
+}
+
+#ad-img-area{
+  width: 100%;
+  height: 100%;
+  background-image: url(../resources/img/호랑이.jpg);
+  background-size: contain;
+  background-position: center center;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
