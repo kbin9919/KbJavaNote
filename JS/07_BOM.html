@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Browser Object Model</h1>  
+
+  <pre>
+    window 객체는 자바스크립트의 최상위 객체이며, 브라우저 내의 모든 요소들과 객체를 포함한다. <br>
+    BOM : location 객체, navigator 객체, history 객체, screen 객체 <br>
+    DOM : document 객체
+</pre>
+  <hr>
+  <h2>window</h2>
+    <button onclick="openTest();">open테스트</button>
+    <button onclick="timeoutTest();">timeout테스트</button>
+    <button onclick="intervalTest();">interval테스트</button>
+    <br>
+    <button onclick="clearTimeoutTest();">clearTimeoutTest테스트</button>
+    <br>
+    <button onclick="clearIntervalTest();">clearIntervalTest테스트</button>
+    <br>
+    <button onclick="reloadT();">reloadT</button>
+    <button onclick="hrefT();">hrefT</button>
+    <button onclick="assignT();">assignT</button>
+    <button onclick="replaceT();">replaceT</button>
+    <br>
+    <button onclick="navigatorTest();">navigatorTest</button>
+    <button onclick="screenTest();">screenTest</button>
+    <br>
+    <button onclick="backTest();">backTest</button>
+    <button onclick="fowardTest();">fowardTest</button>
+    <button onclick="goTest();">goTest</button>
+
+    <pre>
+      open();
+      setTimeout();
+      setInterval();
+    </pre>
+
+  <h2>Bom</h2>
+  <pre>
+    location.reload();
+    location.href
+    location.assign();
+    location.replace(); // history 기록안함
+
+    history.back();
+    history.foward();
+    history.go();
+
+    navigator
+
+    screen
+
+
+  </pre>
+  <script src="./07_BOM.js"></script>
+</body>
+</html>
