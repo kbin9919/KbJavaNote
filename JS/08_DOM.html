@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./08_DOM.css">
+</head>
+<body>
+  <h1>Document Object Model</h1>
+  <hr>
+  <button onclick="addRed();">빨강</button>
+  <button onclick="addBlue();">파랑</button>
+  <button onclick="addGreen();">초록</button>
+  <div id="result"></div>
+  <button onclick="f01();">f1</button>
+  <button onclick="f02();">f2</button>
+  <button onclick="f03();">f3</button>
+  <div id="target">
+    <!-- <img src="../resources/img/abc.png" alt="캐릭터 사진"> -->
+  </div>
+  <pre>
+    - 요소 노드
+    - 텍스트 노드
+  
+    documnet.createElement('태그명');
+    documnet.createTextNode('텍스트');
+  
+    요소노드.appendChild(노드);
+  
+    요소노드.setAttribute("속성명", "속성값");
+  
+    요소노드.removeChild(노드);
+  </pre>
+</body>
+<script src="./08_DOM.js"></script>
+</html>
