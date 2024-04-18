@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+#title{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 15px;
+    grid-column: span 3;
+    background-color: white;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.3fr;
+    grid-template-rows: 5fr;
+    width: 400px;
+    height: 100px;
+}
+
+.box{
+    font-weight: 900;
+    border: 1px solid black;
+}
+
+.class{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
