@@ -1,0 +1,54 @@
+#title{
+  width: 250px;
+  
+}
+#fds{
+  width:  970px;
+}
+
+#content{
+  width: 250px;
+  height: 100px;
+}
+
+input::placeholder{
+  position: absolute; 
+  top: 0px;
+}
+
+#button{
+   position: relative; 
+      top: 0px; 
+      left: 130px; 
+}
+
+.bg1{
+  background-color: rgb(238, 144, 77);
+  color: white;
+  font-weight: 900;
+  
+}
+
+.bg2{
+  background-color: rgba(246, 253, 208, 0.992);
+}
+
+#boder{
+  width: 1000px;
+}
+#name{
+  width: 80%;
+}
+#바로가기{
+  width: 3%;
+}
+.공지사항{
+  width: 55%;
+}
+.조회수{
+  width: 6%;
+}
+
+.번호{
+  width: 5%;
+}
