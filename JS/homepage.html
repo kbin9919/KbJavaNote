@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+
+<body id="body" class="body-white">
+    <a href="" id="title">Welcome to the My HomePage</a>
+
+    <div id="backMode">
+        <div id="moning">🔆</div>
+        <div><input onclick="backmode();" id="button" class="buttonWhite" type="button"><input onclick="backmode();"
+                id="button-togle" class="button-togleWhite" type="button"></div>
+        <div id="evening">🌙</div>
+    </div>
+
+    <pre id="text1" class="text"></pre>
+    <pre id="text2" class="text"></pre>
+    <div id="plusText"></div>
+
+    <div id="box">
+        <div class="login">
+            <div id="id">ID</div>
+            <form class="inputIdPwd" action="Id" method="get"><input id="idText" class="idPwdText" type="text"></form>
+            <div id="pwd">PW</div>
+            <form class="inputIdPwd" action="Pwd" method="get"><input id="pwdText" class="idPwdText notShowPwd" type="text"></form>
+        </div>
+        <button id="showPassword" onclick="showPassword();">👀</button>   
+        <div class="join">
+            <a href="" id="joinText">회원가입</a>
+            <div id="joinLine">|</div>
+            <a href="" id="findText">아이디 찾기</a>
+        </div>
+    </div>
+
+    
+
+
+</body>
+<script src="./homepage.js"></script>
+
+</html>
