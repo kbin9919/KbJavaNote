@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+#body{
+    background-color: antiquewhite;
+    font-family: "Gaegu", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.body-white {
+    background-image: url(/resources/image/backWhite.jpg);
+}
+
+.body-dark {
+    background-image: url(/resources/image/backDark.jpg);
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+#title {
+    font-size: 70px;
+}
+
+#backMode {
+    display: flex;
+    position: relative;
+    left: 190px;
+    top: 80px;
+}
+
+#moning {
+    position: absolute;
+    right: 0px;
+}
+
+#evening {
+    position: absolute;
+    left: 45px;
+}
+
+#button{
+    width: 45px;
+    height: 20px;
+    border: 0px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.buttonWhite {
+    background-color: rgb(134, 132, 132);
+}
+
+
+.buttonDark {
+    background-color: rgb(53, 53, 53);
+}
+
+#button-togle{
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    border: 0px;
+    border-radius: 50%;
+    background: rgb(238, 235, 235);
+}
+.button-togleWhite {
+    left: 1px;
+}
+
+.button-togleDark {
+    left: 24px;
+}
+
+.text {
+    color: white;
+    font-size: 65px;
+    color: antiquewhite;
+    font-family: "Gaegu", sans-serif;
+}
+
+#text1 {
+    position: absolute;
+    bottom: 320px;
+    left: 80px;
+}
+
+#text2 {
+    position: absolute;
+    bottom: 253px;
+    left: 80px;
+}
+
+#plusText {
+    color: antiquewhite;
+    position: absolute;
+    top: 470px;
+    left: 87px;
+    font-size: 30px;
+    color: hwb(0 73% 27% / 0.92);
+}
+
+#box {
+    color: antiquewhite;
+    border: 3px solid hwb(260 25% 74% / 0.36);
+    border-radius: 30px;
+    background-color: hwb(251 4% 91% / 0.56);
+    position: absolute;
+    bottom: 160px;
+    right: 70px;
+    width: 550px;
+    height: 330px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) 0.8fr;
+}
+
+.login {
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.idPwd{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#id {
+    align-items: end;
+}
+
+#pwd {
+    align-items: start;
+    padding: 30px;
+}
+
+.inputIdPwd {
+    grid-column: span 3;
+}
+
+.idPwdText {
+    border: 1px solid hwb(260 25% 74% / 0.36);
+    border-radius: 30px;
+    background-color: hwb(257 2% 95% / 0.56);
+    width: 360px;
+    height: 35px;
+    color: antiquewhite;
+    font-size: 19px;
+    text-indent: 20px;
+    font-family: "Gaegu", sans-serif;
+    position: absolute;
+}
+
+#idText {
+    bottom: 210px;
+}
+
+#pwdText {
+    bottom: 130px;
+}
+
+.join {
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+}
+
+.joinItems{
+    position: absolute;
+}
+
+#joinText {
+    right: 130px;
+    
+}
+
+#findText {
+    right: 55px;
+}
+
+#joinLine {
+    right: 122px;
+}
+
+#showPassword {
+    position: absolute;
+    right: 62px;
+    top: 167px;
+    width: 25px;
+    height: 10px;
+    border: 0px;
+    background-color: hwb(257 2% 95% / 0);
+    color: antiquewhite;
+    font-size: 17px;
+}
+
+#cursor-trail {
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cursor {
+    cursor: url("/resources/image/free-icon-star-of-david-5331627.png"), auto;
+}
+
+#setting{
+    color: grey;
+    position: absolute;
+    font-size: 38px;
+    right: 23px;
+    z-index: 999;
+}
+
+#settingSell{
+    border: 5px solid grey;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-sizing: border-box;
+    width: 295px;
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    visibility: hidden;   
+}
+
+#settingGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px;
+}
+
+.sellGrid{
+    border-bottom: 5px solid grey;
+    grid-column : span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 , 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(9, 9, 9);
+}
+
+#sellGrid4{
+    border-bottom: 0px;
+}
+
+#backG{
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.settingButton{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 80px;
+    height: 25px;
+    background-color: grey;
+}
+.settingT{
+    border: 2px solid grey;
+    border-radius: 40px;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-color: black;
+}
+#epectT{
+    top: 58px;
+}
+.epectOff{
+    right: 38px;
+}
+.epectOn{
+    right: 90px;
+}
+#clickT{
+    top: 108px;
+}
+
+.clickOff{
+    right: 38px;
+}
+
+.clickOn{
+    right: 90px;
+}
+#vibrateT{
+    top: 352px;
+}
+
+.setB{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 110px;
+    height: 10px;
+    background-color: grey;
+    margin: 0px;
+}
+.setBT{
+    background-color: black;
+    height: 98%;
+    border-radius: 30px;
+}
+
+#setBT1{
+    width: 85%;
+}
+#setBT2{
+    width: 40%;
+}
+#setBT3{
+    width: 50%;
+}
+#setBT4{
+    width: 60%;
+}

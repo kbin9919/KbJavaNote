@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+
+<body id="body" class="body-white cursor">
+    <a href="" id="title" class="cursor">Welcome to the My HomePage</a>
+
+    <div id="backMode" class="cursor">
+        <div id="moning" class="cursor" onclick="backmode();">🔆</div>
+        <div><input onclick="backmode();" id="button" class="buttonWhite cursor" type="button"><input
+                onclick="backmode();" id="button-togle" class="button-togleWhite cursor" type="button"></div>
+        <div id="evening" class="cursor" onclick="backmode();">🌙</div>
+    </div>
+
+    <pre id="text1" class="text"></pre>
+    <pre id="text2" class="text"></pre>
+    <div id="plusText"></div>
+
+    <div id="box" class="cursor">
+        <div class="login">
+            <div id="id" class="idPwd">ID</div>
+            <form class="inputIdPwd" action="Id" method="get"><input id="idText" class="idPwdText cursor" type="text">
+            </form>
+            <div id="pwd" class="idPwd">PW</div>
+            <form class="inputIdPwd" action="Pwd" method="get"><input id="pwdText" class="idPwdText cursor"
+                    type="password"></form>
+        </div>
+        <button id="showPassword" class="cursor" onclick="showPassword();">
+            <div id="off">😎</div>
+        </button>
+        <div class="join">
+            <a href="" id="joinText" class="cursor joinItems">회원가입</a>
+            <div id="joinLine" class="joinItems">|</div>
+            <a href="" id="findText" class="cursor joinItems">아이디 찾기</a>
+        </div>
+    </div>
+    
+    <div id="cursor-trail"></div>
+
+    <div id="setting">⚙</div>
+    <div id="settingSell" class="hidden">
+        <div id="settingGrid">
+            <div id="sellGrid1" class="sellGrid">
+                <div></div>
+                <div></div>
+                <div>잔상효과</div>
+                <div class="settingButton" onclick="epectOn();"><div id="epectT" class="settingT epectOff" onclick="epectOn();" ></div></div>
+                <div>클릭모션</div>
+                <div class="settingButton" onclick="clickOn();"><div id="clickT" class="settingT clickOff" onclick="clickOn();" ></div></div>
+                <div>밝기조절</div>
+                <div class="setB"><div id="setBT1" class="setBT"></div></div>
+            </div>
+            <div class="sellGrid">
+                <div>소리조절</div>
+                <div class="setB"><div id="setBT2" class="setBT"></div></div>
+                <div>배경음악</div>
+                <div class="setB"><div id="setBT3" class="setBT"></div></div>
+                <div>효과음</div>
+                <div class="setB"><div id="setBT4" class="setBT"></div></div>
+                <div>진동</div>
+                <div class="settingButton"><div id="vibrateT" class="settingT clickOff"></div></div>
+            </div>
+            <div class="sellGrid">
+                <div>스크린샷</div>
+                <div>Cril + Shift + F</div>
+                <div>파일 불러오기</div>
+                <div>Cril + O</div>
+                <div>동영상 불러오기</div>
+                <div>Cril + M</div>
+                <div>이미지 불러오기</div>
+                <div>Cril + I</div>
+            </div>
+            <div id="sellGrid4" class="sellGrid">
+                <div>공유</div>
+                <div>Cril + Shift + B</div>
+                <div>저장</div>
+                <div>Cril + S</div>
+                <div>모두 저장</div>
+                <div>Art + Shift + S</div>
+                <div>최근 작업 열기</div>
+                <div>Art + Shift + O</div>
+            </div>            
+        </div>
+    </div>
+
+    <div id="clickE"></div>
+
+    <div id="backG"></div>
+
+    
+</body>
+
+<script src="./homepage.js"></script>
+
+</html>
