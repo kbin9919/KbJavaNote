@@ -1,0 +1,39 @@
+body{
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vw;
+  background-color: gainsboro;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#enroll-area{
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center center;
+}
+
+#enroll-area > input{
+  width: 80%;
+  height: 80%;
+  font-size: 24px;
+}
+#enroll-area > button{
+  width: 90%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: aqua;
+}
+#enroll-area > button:active{
+  width: 90%;
+  height: 50%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgb(154, 158, 158);
+}
+
+
