@@ -1,6 +1,6 @@
 package stage1;
 
-public class Soultion49 {
+public class Solution49 {
 	public String solution(String[] cards1, String[] cards2, String[] goal) {
 		String answer = "";
 		for (int i = 0; i < goal.length; i++) {
