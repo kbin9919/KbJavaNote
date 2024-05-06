@@ -9,6 +9,5 @@
 <body>
 	<h1>로그인</h1>
 	<a href="/MyLog/home">홈페이지</a>
-	<a href="/MyLog/admin/join">회원가입</a>
 </body>
 </html>
