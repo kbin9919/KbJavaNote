@@ -29,10 +29,15 @@
 		<button onclick="location.href = '/app/member/logout'">로그아웃</button>
 	</c:if>
 	<c:if test="${newAdminVo != null}">
+		<br>
 		<a>계정 경고</a>
+		<br>
 		<a>계정 제제</a>
-		<a>게시글 목록 조회</a>
+		<br>
+		<a href="/MyLog/admin/select/board">게시글 목록 조회</a>
+		<br>
 		<a>유저 조회</a>
+		<br>
 		
 	</c:if>
 </body>
