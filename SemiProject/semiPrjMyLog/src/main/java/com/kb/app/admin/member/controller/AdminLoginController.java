@@ -1,4 +1,4 @@
-package com.kb.app.admin.controller;
+package com.kb.app.admin.member.controller;
 
 import java.io.IOException;
 

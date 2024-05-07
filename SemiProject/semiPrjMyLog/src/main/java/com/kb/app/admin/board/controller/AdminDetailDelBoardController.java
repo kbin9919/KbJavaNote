@@ -1,7 +1,6 @@
-package com.kb.app.admin.controller;
+package com.kb.app.admin.board.controller;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,24 +12,23 @@ import javax.servlet.http.HttpSession;
 import com.kb.app.admin.service.AdminService;
 import com.kb.app.admin.vo.BoardVo;
 
-@WebServlet("/admin/detail/board")
-public class AdminDetailBoard extends HttpServlet {
+@WebServlet("/admin/detail/del/board")
+public class AdminDetailDelBoardController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/views/admin/board/detail.jsp").forward(req, resp);
+		req.getRequestDispatcher("/WEB-INF/views/admin/delBoard/detail.jsp").forward(req, resp);
 
 	}
-
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession session = req.getSession();
 		try {
 			String getTitle = req.getParameter("title");
 			AdminService adminService = new AdminService();
-			BoardVo boardVo = adminService.detailBoard(getTitle);
+			BoardVo delBoardVo = adminService.detailDelBoard(getTitle);
 
-			req.setAttribute("boardVo", boardVo);
-			req.getRequestDispatcher("/WEB-INF/views/admin/board/detail.jsp").forward(req, resp);
+			req.setAttribute("delBoardVo", delBoardVo);
+			req.getRequestDispatcher("/WEB-INF/views/admin/delBoard/detail.jsp").forward(req, resp);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

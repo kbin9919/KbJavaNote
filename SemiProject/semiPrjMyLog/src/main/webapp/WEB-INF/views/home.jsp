@@ -36,8 +36,11 @@
 		<br>
 		<a href="/MyLog/admin/select/board">게시글 목록 조회</a>
 		<br>
-		<a>유저 조회</a>
+		<a href="/MyLog/admin/select/del/board">삭제된 게시글 목록 조회</a>
 		<br>
+		<a href="/MyLog/admin/select/member">유저 조회</a>
+		<br>
+		<a href="/MyLog/admin/select/del/member">삭제된 유저 조회</a>
 		
 	</c:if>
 </body>

@@ -8,12 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>게시판 상세 조회</h1>
+	<h1>삭제된 게시글 상세 조회</h1>
 	<form action="/MyLog/admin/detail/board" method="post">
 		<input type="text" name="title" placeholder="게시글 제목"> <br>
 		<input type="submit" value="검색">
 	</form>
-	<c:if test="${boardVo != null}">
+	<c:if test="${delBoardVo != null}">
 		<table border="1">
 			<thead>
 				<tr>
@@ -27,12 +27,12 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>${boardVo.title}</td>
-					<td>${boardVo.writer}</td>
-					<td>${boardVo.categoryNo}</td>
-					<td>${boardVo.hits}</td>
-					<td>${boardVo.noticeYn}</td>
-					<td>${boardVo.secretYn}</td>
+					<td>${memberVo.title}</td>
+					<td>${memberVo.writer}</td>
+					<td>${memberVo.categoryNo}</td>
+					<td>${memberVo.hits}</td>
+					<td>${memberVo.noticeYn}</td>
+					<td>${memberVo.secretYn}</td>
 				</tr>
 			</tbody>
 		</table>
