@@ -342,4 +342,19 @@ public class AdminDao {
 		return delMemberVo;
 	}
 
+	public int warning(Connection conn, String warningNo, String email) throws Exception {
+		System.out.println("dao 넘어옴");
+		System.out.println("dao 넘어옴" + email + ", " + warningNo);
+		String sql = "INSERT INTO WARNING_NUM(NO, EMAIL, WARNING_NO, WARNING_NUM) VALUES(SEQ_WARNING_NUM.NEXTVAL, ?, ?, 1)";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, email);
+		pstmt.setString(2, warningNo);
+		System.out.println("쿼리문 통과");
+		int result = pstmt.executeUpdate();
+		
+		close(pstmt);
+		System.out.println("dao 리턴" + result);
+		return result;
+	}
+
 }

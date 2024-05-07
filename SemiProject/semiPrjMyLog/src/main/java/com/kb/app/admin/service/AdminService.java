@@ -86,8 +86,8 @@ public class AdminService {
 		close(conn);
 
 		return memberVo;
-	}	
-	
+	}
+
 	public List<MemberVo> selectDelMemberList() throws Exception {
 		Connection conn = getConnection();
 		List<MemberVo> delMemberVoList = adminDao.selectDelMemberList(conn);
@@ -106,6 +106,21 @@ public class AdminService {
 		return delMemberVo;
 	}
 
-	
+	public int warning(String warningNo, String email) throws Exception {
+		Connection conn = getConnection();
+		System.out.println("서비스 넘어옴");
+		int result = adminDao.warning(conn, warningNo, email);
+		if (result == 1) {
+			System.out.println("커밋됨");
+			commit(conn);
+		} else {
+			System.out.println("롤백됨");
+			rollback(conn);
+		}
+		
+		close(conn);
+		System.out.println("서비스 값 리턴");
+		return result;
+	}
 
 }

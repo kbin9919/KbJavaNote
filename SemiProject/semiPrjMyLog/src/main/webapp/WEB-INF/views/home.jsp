@@ -30,7 +30,7 @@
 	</c:if>
 	<c:if test="${newAdminVo != null}">
 		<br>
-		<a>계정 경고</a>
+		<a href="/MyLog/admin/warning">계정 경고</a>
 		<br>
 		<a>계정 제제</a>
 		<br>
