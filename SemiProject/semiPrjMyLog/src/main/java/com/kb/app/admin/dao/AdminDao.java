@@ -234,8 +234,8 @@ public class AdminDao {
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, getEmail);
 		ResultSet rs = pstmt.executeQuery();
-		MemberVo  memberVo = null;
-		
+		MemberVo memberVo = null;
+
 		if (rs.next()) {
 			String email = rs.getString("EMAIL");
 			String password = rs.getString("PASSWORD");
@@ -247,9 +247,9 @@ public class AdminDao {
 			String following = rs.getString("FOLLOWING");
 			String warnigPoint = rs.getString("WARNIG_POINT");
 			String authority = rs.getString("AUTHORITY");
-			
+
 			memberVo = new MemberVo();
-			
+
 			memberVo.setEmail(email);
 			memberVo.setPassword(password);
 			memberVo.setNick(nick);
@@ -310,7 +310,7 @@ public class AdminDao {
 		pstmt.setString(1, getEmail);
 		ResultSet rs = pstmt.executeQuery();
 		MemberVo delMemberVo = null;
-		
+
 		if (rs.next()) {
 			System.out.println("123");
 			String email = rs.getString("EMAIL");
@@ -323,9 +323,9 @@ public class AdminDao {
 			String following = rs.getString("FOLLOWING");
 			String warnigPoint = rs.getString("WARNIG_POINT");
 			String authority = rs.getString("AUTHORITY");
-			
+
 			delMemberVo = new MemberVo();
-			
+
 			delMemberVo.setEmail(email);
 			delMemberVo.setPassword(password);
 			delMemberVo.setNick(nick);
@@ -351,9 +351,19 @@ public class AdminDao {
 		pstmt.setString(2, warningNo);
 		System.out.println("쿼리문 통과");
 		int result = pstmt.executeUpdate();
-		
+
 		close(pstmt);
 		System.out.println("dao 리턴" + result);
+		return result;
+	}
+
+	public int quitMember(Connection conn, String getEmail) throws Exception {
+		String sql = "DELETE FROM MEMBER WHERE EMAIL = ?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, getEmail);
+		
+		int result = pstmt.executeUpdate();
+		
 		return result;
 	}
 

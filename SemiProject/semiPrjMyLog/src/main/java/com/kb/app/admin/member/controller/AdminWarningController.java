@@ -26,10 +26,11 @@ public class AdminWarningController extends HttpServlet {
 			System.out.println(email);
 			AdminService as = new AdminService();
 			int result = as.warning(warningNo, email);
-			
+			System.out.println(result);
 			if (result == 1) {
+				System.out.println("조건문 통과");
 				req.setAttribute("resultMsg", "경고 성공!");
-				req.getRequestDispatcher("/WEB-INF/views/common/result,jsp");
+				req.getRequestDispatcher("/WEB-INF/views/common/result.jsp").forward(req, resp);
 			} else {
 				throw new Exception("경고 실패..");
 			}

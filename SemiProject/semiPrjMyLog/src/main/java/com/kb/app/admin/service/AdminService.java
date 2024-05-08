@@ -123,4 +123,18 @@ public class AdminService {
 		return result;
 	}
 
+	public int quitMember(String getEmail) throws Exception {
+		Connection conn = getConnection();
+		int result = adminDao.quitMember(conn, getEmail);
+		if (result == 1) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		
+		close(conn);
+		return result;
+		
+	}
+
 }

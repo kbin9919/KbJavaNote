@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>경고 결과</h1>
 	${resultMsg}
 </body>
 </html>

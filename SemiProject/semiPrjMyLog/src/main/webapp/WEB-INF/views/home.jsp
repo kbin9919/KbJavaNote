@@ -32,7 +32,7 @@
 		<br>
 		<a href="/MyLog/admin/warning">계정 경고</a>
 		<br>
-		<a>계정 제제</a>
+		<a href="/MyLog/admin/quit/member">계정 제제</a>
 		<br>
 		<a href="/MyLog/admin/select/board">게시글 목록 조회</a>
 		<br>
