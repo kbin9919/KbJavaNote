@@ -6,13 +6,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 	<c:if test="${not empty alertMsg}">
 	alert("${alertMsg}");
 	</c:if>
 </script>
 <c:remove var="alertMsg" scope="session" />
-
+<link rel="stylesheet" href="/MyLog/resources/home.css">
+<script src="/MyLog/resources/home.js"></script>
 </head>
 <body>
 	<h1>홈페이지</h1>
@@ -41,7 +43,11 @@
 		<a href="/MyLog/admin/select/member">유저 조회</a>
 		<br>
 		<a href="/MyLog/admin/select/del/member">삭제된 유저 조회</a>
-		
+		<br>
+		<div id="myPage" onclick="me01()">마이페이지</div>
+		<a href="/MyLog/myPage/home" id="menu1" class="n menu">내 벨로그</a>
+		<a href="/MyLog/myPage/setting" id="menu2" class="menu">설정</a>
+		<a href="" id="menu3" class="menu">로그 아웃</a>
 	</c:if>
 </body>
 </html>
