@@ -25,7 +25,7 @@ public class Solution59 {
 			num -= Cnt[i];
 		}
 		List<Integer> list = new ArrayList<>(m.keySet());
-		list.sort((o1,o2) -> m.get(o2).compareTo(m.get(o1)));
+		list.sort((a,b) -> m.get(b).compareTo(m.get(a)));
 		for(int i =0; i<N; i++) {
 			answer[i] = list.get(i);
 		}
@@ -37,6 +37,6 @@ public class Solution59 {
 		Solution59 s = new Solution59();
 		int x[] = { 2, 1, 2, 6, 2, 4, 3, 3 };
 		s.solution(5, x);
-
+		
 	}
 }
