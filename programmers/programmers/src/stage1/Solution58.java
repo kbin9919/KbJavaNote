@@ -3,9 +3,7 @@ package stage1;
 public class Solution58 {
 	public int solution(String[] babbling) {
 		int answer = 0;
-
 		String[] str = { "aya", "ye", "woo", "ma" };
-
 		for (String b : babbling) {
 			for (String s : str) {
 				if(b.indexOf(s + s) >= 0) {
