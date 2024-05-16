@@ -1,0 +1,37 @@
+body{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top{
+    color: black;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.top-right{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 0px;
+}
+
+#newBoard{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 80px;
+    height: 20px;
+}
+.midle{
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: 2.5fr 1fr 2fr 1fr;
+    justify-items: center;
+}
