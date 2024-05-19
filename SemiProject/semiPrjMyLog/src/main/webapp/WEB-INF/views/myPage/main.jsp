@@ -9,14 +9,18 @@
     </head>
 
     <body>
-        <div class="top">MyLog</div>
-        <div class="top">MyHome</div>
-        <div class="top top-right">
-            <div>알림</div>
-            <div>검색</div>
-            <div id="newBoard">새 글 작성</div>
-            <div>set</div>
-        </div>
+        <header>
+            <div class="top">
+                <div>MyLog</div>
+                <div>MyHome</div>
+                <div class="top-right">
+                    <div>알림</div>
+                    <div>검색</div>
+                    <div id="newBoard">새 글 작성</div>
+                    <div>set</div>
+                </div>
+            </div>
+        </header>
         <div class="midle">
             <div class="midle-profile">
                 <div>사진파일</div>

@@ -8,12 +8,17 @@ body {
     height: 120vh;
 }
 /* TOP */
+header {
+    grid-column: span 3;
+}
 .top {
     color: black;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     font-size: 13px;
+    justify-items: center;
+    gap: 15px;
 }
 
 .top-right {
@@ -32,6 +37,7 @@ body {
     height: 20px;
     background-color: rgb(244, 246, 247);
 }
+
 /* MIDLE */
 .midle {
     grid-column: span 3;
@@ -97,17 +103,20 @@ input[name="search"] {
     background-color: rgb(238, 233, 233);
     height: 22px;
 }
+
 /* TAG */
-.tag{
+.tag {
     display: flex;
     justify-content: end;
 }
-.tag>table{
+
+.tag>table {
     display: flex;
     justify-content: center;
     font-size: 13px;
 }
-#tagList{
+
+#tagList {
     font-weight: 900;
     border-bottom: 1px solid black;
     width: 130px;
@@ -115,8 +124,9 @@ input[name="search"] {
     display: flex;
     justify-content: center;
 }
+
 /* CONTENT */
-.board{
+.board {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 7fr 1fr 2.5fr 1fr 1fr;
@@ -125,7 +135,8 @@ input[name="search"] {
     gap: 20px;
     font-size: 12px;
 }
-.img{
+
+.img {
     border: 1px solid black;
     width: 550px;
     height: 300px;
@@ -133,20 +144,23 @@ input[name="search"] {
     justify-content: center;
     align-items: center;
 }
-.board > div{
+
+.board>div {
     width: 550px;
     display: flex;
     justify-content: start;
 }
 
-#board-title{
+#board-title {
     font-size: 14px;
     font-weight: 900;
 }
-#board-tag{
+
+#board-tag {
     gap: 8px;
 }
-#board-tag > div{
+
+#board-tag>div {
     border: 1px solid rgb(245, 241, 241);
     border-radius: 15px;
     background-color: rgb(227, 226, 226);
@@ -159,6 +173,6 @@ input[name="search"] {
     height: 12px;
 }
 
-#board-etc{
+#board-etc {
     gap: 10px;
 }
