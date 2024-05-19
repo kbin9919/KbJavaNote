@@ -43,22 +43,20 @@ header {
 .midle {
     grid-column: span 3;
     display: grid;
-    grid-template-rows: 2.5fr 1fr 2fr 1fr;
+    grid-template-rows: 3.5fr 1fr 3fr 1fr;
     justify-items: center;
 }
 
 .midle-profile {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 1fr 1fr;
     font-size: 20px;
-    position: relative;
-    top: 50px;
-    right: 100px;
-    width: 300PX;
-    height: 100px;
-    align-items: center;
-    column-gap: 0px;
+    width: 550PX;
+    place-items: center start;
+    padding: 20px;
+    border-bottom: 2px solid rgb(96, 96, 96);
+    margin-top: 40px;
 }
 
 .midle-profile>:nth-child(1) {
@@ -67,10 +65,11 @@ header {
     align-items: center;
     grid-row: span 2;
     font-weight: 900;
-    border: 1px solid rgb(138, 137, 137);
+    border: 2px solid rgb(138, 137, 137);
     border-radius: 500px;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
+    padding: 3px;
 }
 
 .midle-follow {
@@ -79,7 +78,6 @@ header {
     align-items: center;
     gap: 10px;
     font-size: 13px;
-    border-top: 2px solid rgb(96, 96, 96);
     width: 550px;
     height: 43px;
 }
@@ -139,7 +137,7 @@ input[name="midle-search"] {
 
 .img {
     border: 1px solid black;
-    width: 550px;
+    width: 600px;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -147,7 +145,7 @@ input[name="midle-search"] {
 }
 
 .board>div {
-    width: 550px;
+    width: 600px;
     display: flex;
     justify-content: start;
 }
