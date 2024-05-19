@@ -6,6 +6,7 @@ body {
     grid-template-rows: 1fr 7fr 2fr;
     width: 100vw;
     height: 120vh;
+    background-color: antiquewhite;
 }
 /* TOP */
 header {
@@ -35,7 +36,7 @@ header {
     border-radius: 25px;
     width: 80px;
     height: 20px;
-    background-color: rgb(244, 246, 247);
+    background-color: rgb(236, 211, 169);
 }
 
 /* MIDLE */
@@ -70,7 +71,6 @@ header {
     border-radius: 500px;
     width: 120px;
     height: 120px;
-    background-color: rgb(187, 190, 192);
 }
 
 .midle-follow {
@@ -100,9 +100,9 @@ header {
 }
 
 input[name="midle-search"] {
-    background-color: rgb(244, 246, 247);
+    background-color: antiquewhite;
     height: 22px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 /* TAG */
