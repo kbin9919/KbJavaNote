@@ -99,9 +99,10 @@ header {
     justify-content: end;
 }
 
-input[name="search"] {
-    background-color: rgb(238, 233, 233);
+input[name="midle-search"] {
+    background-color: rgb(244, 246, 247);
     height: 22px;
+    border-radius: 5px;
 }
 
 /* TAG */

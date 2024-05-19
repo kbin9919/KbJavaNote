@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Insert title here</title>
         <link rel="stylesheet" href="/MyLog/resources/main.css">
+        <link rel="stylesheet" href="/MyLog/resources/follow.css">
     </head>
 
     <body>
@@ -21,6 +22,7 @@
                 </div>
             </div>
         </header>
+        
         <div class="midle">
             <div class="midle-profile">
                 <div>사진파일</div>
@@ -38,7 +40,7 @@
             </div>
             <div class="midle-search">
                 <form action="" method="post">
-                    <input type="text" name="search" placeholder="🔍검색어를 입력하세요">
+                    <input type="text" name="midle-search" placeholder="🔍검색어를 입력하세요">
                 </form>
             </div>
         </div>
