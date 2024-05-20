@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="/MyLog/resources/follow.css">
 <link rel="stylesheet" href="/MyLog/resources/main.css">
+<script defer src="/MyLog/resources/follow.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -23,8 +25,8 @@
     </header>
     <div class="with">
             <div class="with-togle">
-                <div>팔로워</div>
-                <div>팔로잉</div>
+                    <a class="with-focus">팔로워</a>
+                <a>팔로잉</a>
             </div>
             <div class="with-search">
                 <form action="" method="post">
@@ -34,54 +36,11 @@
             <div class="with-list">
                 <div>모든 팔로워</div>
                 <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
+                    <div id="with-img"><a href=""><img src="" alt="사진"></a></div>
+                    <div><div><a href="">이름</a></div><a href=""><div id="with-email">이메일</div></a></div>
                     <div id="with-following">팔로잉</div>
                     <div>소개문구</div>
                 </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                <div class="with-list-name">
-                    <div id="with-img">사진파일</div>
-                    <div><div>이름</div><div id="with-email">이메일</div></div>
-                    <div id="with-following">팔로잉</div>
-                    <div>소개문구</div>
-                </div>
-                
             </div>
     </div>
 </body>

@@ -35,16 +35,16 @@
     height: 120px;
 }
 
-.setting-img>div:nth-child(2),
-.setting-img>div:nth-child(3) {
+.setting-img > a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(205, 205, 205);
     border-radius: 20px;
     width: 140px;
     height: 30px;
-    background-color: rgb(195, 196, 196);
+    background-color: rgb(94, 237, 139);
+    font-weight: 900;
 }
 .setting-info {
     display: grid;
@@ -79,8 +79,8 @@ a{
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
     width: 83%;
-    height: 50%;
-    font-size: 14px;
+    height: 60%;
+    font-size: 13px;
     align-items: center;
     border-bottom: 1px solid rgb(117, 116, 116);
 }
@@ -96,9 +96,10 @@ a{
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     width: 83%;
-    height: 50%;
+    height: 60%;
     align-items: center;
     border-bottom: 1px solid rgb(117, 116, 116);
+    
 }
 
 .setting-list-tema{
@@ -141,5 +142,6 @@ a{
     color: white;
 }
 .setting-list-quit+div{
-    font-size: 14px;
+    font-size: 11.3px;
+    font-weight: 900;
 }

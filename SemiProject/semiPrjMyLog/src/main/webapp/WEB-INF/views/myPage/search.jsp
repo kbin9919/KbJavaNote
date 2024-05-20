@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="/MyLog/resources/main.css">
 <link rel="stylesheet" href="/MyLog/resources/search.css">
+<script defer src="/MyLog/resources/search.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -24,7 +26,7 @@
     <div class="search">
         <div class="input">
             <form action="" method="post">
-                <input type="text" name="search" placeholder="🔍검색어를 입력하세요">
+                <span id="search-icon">🔍</span><input type="text" name="search" placeholder="검색어를 입력하세요">
             </form>
             <div>총 <span style="font-weight: 900;">n</span>개의 포스트를 찾았습니다.</div>
         </div>
@@ -34,13 +36,13 @@
                 <div>이름</div>
             </div>
             <div class="board">
-                <div class="img">사진파일</div>
+                <div class="img"><img src="" alt="기본이미지"></div>
                 <div id="board-title">제목 : 프로그래머스</div>
                 <div>내용 요약 : 게시글의 내용을 n글자 까지 표시</div>
                 <div id="board-tag">
-                    <div>프로그래머스</div>
-                    <div>12345문제</div>
-                    <div>123</div>
+                    <a href="">프로그래머스</a>
+                    <a href="">12345문제</a>
+                    <a href="">123</a>
                 </div>
                 <div id="board-etc">
                     <div>작성 시간</div>

@@ -2,41 +2,50 @@
     display: grid;
     grid-template-rows: 1fr 1.3fr 9.5fr;
     place-items: center center;
-    grid-column: span 3;    
+    grid-column: span 3;
     grid-row: span 2;
     margin-top: 40px;
 }
-.with-togle{
+
+.with-togle {
     display: flex;
-    gap: 14px;
-    width: 50%;
+    justify-content: center;
+    width: 55%;
     font-size: 17px;
     font-weight: 900;
     padding: 15px;
 }
 
-.with-togle>div{
+.with-togle>a {
+    width: 28%;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid rgb(81, 80, 80);
-    width: 13%;
-    padding: 5px;
 }
 
-.with-search{
+.with-focus {
+    display: flex;
+    justify-content: center;
+    color: rgb(101, 214, 93);
+    border-bottom: 2px solid rgb(85, 220, 85);
+    padding-bottom: 4px;
+    width: 30%;
+}
+
+.with-search {
     display: flex;
     justify-content: end;
     width: 57%;
-    border-bottom: 1.7px solid gray;
     padding: 10px;
 }
+
 input[name="with-search"] {
     background-color: rgb(243, 241, 238);
     width: 100%;
     height: 25px;
     border-radius: 15px;
 }
-.with-list{
+
+.with-list {
     width: 57%;
     height: 100%;
     display: grid;
@@ -46,12 +55,14 @@ input[name="with-search"] {
     border-radius: 15px;
     padding: 5px;
 }
-.with-list>div:nth-child(1){
+
+.with-list>div:nth-child(1) {
     font-size: 16px;
     font-weight: 900;
     margin: 15px;
 }
-.with-list-name{
+
+.with-list-name {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-column: 1fr 1fr;
@@ -60,27 +71,38 @@ input[name="with-search"] {
     border-radius: 15px;
 }
 
-.with-list-name > div:nth-child(odd){
+.with-list-name>div:nth-child(odd) {
     grid-row: span 2;
 }
-.with-list-name > div:nth-child(even){
+
+.with-list-name>div:nth-child(even) {
     display: flex;
     place-items: center center;
     width: 100%;
     gap: 10px;
 }
-#with-email{
+
+#with-email {
     color: gray;
     font-size: 12px;
 }
-#with-following{
-    border: 1px solid black;
+
+#with-following {
+    border: 1px solid green;
+    color: green;
     border-radius: 30px;
+    width: max-content;
     padding: 7px;
     font-size: 13px;
     font-weight: 900;
 }
-#with-img{
+
+#with-following:hover {
+    border: 1px solid rgb(227, 19, 19);
+    color: rgb(249, 88, 30);
+}
+
+#with-img {
     border: 1.7px solid black;
     border-radius: 50px;
     width: 50px;

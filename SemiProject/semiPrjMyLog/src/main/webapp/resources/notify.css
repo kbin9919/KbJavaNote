@@ -20,8 +20,8 @@
     display: flex;
     gap: 14px;
 }
-.notify-togle > div:nth-child(1) > div{
-    border: 2px solid rgb(81, 80, 80);
+.notify-togle-border{
+    border: 2px solid rgb(80, 79, 79);
     border-radius: 20px;
     width: max-content;
     height: max-content;
@@ -30,7 +30,12 @@
     padding-right: 12px;
 }
 
-.notify-togle > div:nth-child(2){
+.notify-togle-focus{
+    border: 2px solid green;
+    color: rgb(57, 200, 57);
+}
+
+.notify-togle > div:nth-child(2)>a{
     color: rgb(113, 113, 113);
     font-size: 11px;
 }
