@@ -28,7 +28,7 @@
             </div>
             <div class="with-search">
                 <form action="" method="post">
-                    <input type="text" name="with-search" placeholder="🔍검색어를 입력하세요">
+                    <span id="search-icon">🔍</span><input type="text" name="midle-search" placeholder="검색어를 입력하세요">
                 </form>
             </div>
             <div class="with-list">
