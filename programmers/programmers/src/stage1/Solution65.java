@@ -7,20 +7,16 @@ public class Solution65 {
 	public String solution(String X, String Y) {
 		Map<Integer, Integer> xMap = new HashMap();
 		Map<Integer, Integer> yMap = new HashMap();
-		
 		int putNum = 0;
 		for (String x : X.split("")) {
 			putNum = Integer.parseInt(x);
 			xMap.put(putNum, xMap.getOrDefault(putNum, 0) + 1);
 		}
-		
 		for (String y : Y.split("")) {
 			putNum = Integer.parseInt(y);
 			yMap.put(putNum, yMap.getOrDefault(putNum, 0) + 1);
 		}
-		
 		StringBuilder sb = new StringBuilder();
-		
 		for (int i = 9; i >= 0; i--) {
 			if (xMap.containsKey(i) && yMap.containsKey(i)) {
 				int cnt = Math.min(xMap.get(i), yMap.get(i));
