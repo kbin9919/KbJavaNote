@@ -5,9 +5,7 @@ import java.util.Stack;
 public class Solution69 {
 	public int solution(int[] ingredient) {
 		Stack<Integer> stack = new Stack<Integer>();
-
 		int answer = 0;
-
 		for (int i : ingredient) {
 			stack.add(i);
 			if (stack.size() >= 4) {
@@ -19,7 +17,6 @@ public class Solution69 {
 					}
 					answer++;
 				}
-
 			}
 		}
 		return answer;
