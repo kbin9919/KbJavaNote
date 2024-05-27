@@ -372,5 +372,15 @@ ALTER TABLE BOARD_ATTACHMENT ADD CONSTRAINT FK_BOARD_ATTACHMENT_BOARD FOREIGN KE
 ---------------------------------------------------
 --------------------- 데이터 -----------------------
 ---------------------------------------------------
+--관리자 등록--
+INSERT INTO MEMBER(
+    NO
+    , EMAIL
+    , PASSWORD
+    , NICK
+    , ADMIN_YN) VALUES(1, 'ADMIN01', 1234, '관리자01', 'Y');
+--관리자 로그인--
+SELECT NO, EMAIL, PASSWORD, NICK, ADMIN_YN FROM MEMBER WHERE EMAIL = 'ADMIN01' AND PASSWORD = 1234 AND ADMIN_YN = 'Y';
+
 
 COMMIT;
