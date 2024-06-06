@@ -8,12 +8,12 @@ public class Solution70 {
 		Stack<Integer> stack = new Stack<Integer>();
 		for (int i = 0; i < moves.length; i++) {
 			for (int j = 0; j < board.length; j++) {
-				int picked = board[j][moves[i] - 1]; // move 값은 1부터 시작하기 때문에 인덱스를 맞추기 위해 -1 필요
+				int picked = board[j][moves[i] - 1]; 
 				if (picked != 0) {
 					board[j][moves[i] - 1] = 0;
 					if (!stack.isEmpty() && stack.peek() == picked) {
 						stack.pop();
-						answer += 2; // 같은 인형이 연속으로 쌓이면 사라지므로 점수 2 추가
+						answer += 2; 
 					} else {
 						stack.push(picked);
 					}
