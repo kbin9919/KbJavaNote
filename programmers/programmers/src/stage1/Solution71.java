@@ -3,10 +3,8 @@ package stage1;
 public class Solution71 {
 	public String solution(int[] numbers, String hand) {
 		String answer = "";
-
 		int left = 10; 
 		int right = 12; 
-
 		for (int number : numbers) {
 			if (number == 0) {
 				number = 11; 
