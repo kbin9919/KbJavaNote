@@ -16,7 +16,6 @@ public class Solution76 {
 			String[] parts = part.split(" ");
 			m.put(parts[0], parts[1]);
 		}
-
 		for (int i = 0; i < privacies.length; i++) {
 			String[] parts = privacies[i].split(" ");
 			LocalDate date = LocalDate.parse(parts[0], DateTimeFormatter.ofPattern("yyyy.MM.dd"));
