@@ -8,18 +8,15 @@ public class Solution80 {
 		int answer = 0;
 		int maxHealth = health;
 		Map<Integer, Integer> attacksMap = new TreeMap<>();
-
 		for (int attack[] : attacks) {
 			attacksMap.put(attack[0], attack[1]);
 		}
 		int lastAttack = ((TreeMap<Integer, Integer>) attacksMap).lastKey();
 		int bandageCnt = 0;
-
 		for (int i = 0; i <= lastAttack; i++) {
 			if (attacksMap.containsKey(i)) {
 				health -= attacksMap.get(i);
 				bandageCnt = 0;
-				System.out.println("공격 후 체력 : " + health);
 				if (health < 1) {
 					return answer = -1;
 				}
@@ -35,9 +32,7 @@ public class Solution80 {
 					health = maxHealth;
 				}
 			}
-			System.out.println("현재 체력 : " + health);
 		}
-		System.out.println("마지막 체력" + health);
 		answer = health;
 		return answer;
 	}
