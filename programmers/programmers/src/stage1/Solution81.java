@@ -9,13 +9,11 @@ public class Solution81 {
         Map<String, Map<String, Integer>> giftRecords = new HashMap<>();
         Map<String, Integer> giftScore = new HashMap<>();
         Map<String, Integer> nextMonthGifts = new HashMap<>();
-
         for (String friend : friends) {
             giftRecords.put(friend, new HashMap<>());
             giftScore.put(friend, 0);
             nextMonthGifts.put(friend, 0);
         }
-
         for (String gift : gifts) {
             String[] parts = gift.split(" ");
             String giver = parts[0];
@@ -25,7 +23,6 @@ public class Solution81 {
             giftScore.put(giver, giftScore.get(giver) + 1);
             giftScore.put(receiver, giftScore.get(receiver) - 1);
         }
-
         for (String giver : friends) {
             for (String receiver : friends) {
                 if (!giver.equals(receiver)) {
@@ -40,7 +37,6 @@ public class Solution81 {
                 }
             }
         }
-
         return Collections.max(nextMonthGifts.values());
     }
 }
