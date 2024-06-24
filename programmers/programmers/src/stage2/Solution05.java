@@ -18,3 +18,5 @@ public class Solution05 {
 		return answer;
 	}
 }
+
+
