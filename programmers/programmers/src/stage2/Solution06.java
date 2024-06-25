@@ -16,7 +16,6 @@ public class Solution06 {
 				}
 			}
 		}
-
 		return answer;
 	}
 }
