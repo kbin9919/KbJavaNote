@@ -13,7 +13,7 @@ public class Solution07 {
 				break;
 			}
 		}
-        int answer = 0;
+        int answer = Integer.parseInt(binaryN, 2);;
         return answer;
     }
 
